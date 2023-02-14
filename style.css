@@ -1,0 +1,225 @@
+body {
+  background-image: url("img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60px;
+}
+
+header > .nav-header > a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 35px;
+  align-items: center;
+  color: white;
+}
+
+.img-contac {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 150px;
+}
+
+header > .img-contac > a > img {
+  height: 60px;
+  background-color: rgba(42, 134, 170, 0.308);
+  border-radius: 10px;
+  align-items: center;
+}
+
+header > .img-contac > a {
+  text-decoration: none;
+  color: white;
+}
+
+header > .img-contac > a > h1 {
+  border: solid 1px rgb(230, 230, 230);
+  padding: 30px;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.logo > h2 {
+  font-size: 70px;
+  margin-right: 150px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 145px;
+  margin-left: 90px;
+  align-items: start;
+}
+.info > h2,
+h1,
+p,
+a {
+  text-decoration: none;
+  color: white;
+}
+.info > .more-me > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  height: 40px;
+}
+.info > h2 {
+  border: white 1px solid;
+  padding: 15px 8px;
+  font-family: sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.3393732492997199) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.info > h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  margin: 0px;
+}
+.info > p {
+  font-size: 25px;
+  width: 600px;
+  text-align: justify;
+}
+.logo-2d {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  height: 500px;
+  width: 500px;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.wrap{
+	width: 1200px;
+	max-width: 90%;
+	margin: 30px auto;
+  background-color: #363636;
+  margin-top: 10%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+ul.tabs{
+	width: 80%;
+	background: #363636;
+	list-style: none;
+	display: flex;
+  padding: 0;
+  margin-left: 190px;
+}
+
+ul.tabs li{
+	width: 18%;
+}
+
+ul.tabs li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	display: block;
+	padding: 20px 0px;
+}
+
+.active{
+	background: #0984CC;
+}
+
+ul.tabs li a .tab-text{
+	margin-left: 8px;
+}
+
+.secciones{
+	width: 100%;
+	background: #363636;
+}
+
+.secciones article{
+	padding: 30px;
+}
+
+.secciones article p{
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px){
+	ul.tabs li a{
+		padding: 15px 0px;
+	}
+
+	ul.tabs li a .tab-text{
+		display: none;
+	}
+
+	.secciones article{
+		padding: 20px;
+	}
+}
