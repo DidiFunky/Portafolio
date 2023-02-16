@@ -250,8 +250,19 @@ ul.tabs li a .tab-text {
       rgba(9, 9, 121, 0.3393732492997199) 35%,
       rgba(0, 212, 255, 1) 100%);
 }
-
-.wrap>.secciones>.skill-info>.info-html>img {
+#tab1{
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+#tab1>.info-html{
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#tab1>.info-html>img {
   height: 70px;
   width: 70px;
 }
