@@ -41,7 +41,7 @@ header {
   min-height: 60px;
 }
 
-header>.nav-header>a {
+header > .nav-header > a {
   padding: 15px;
   text-decoration: none;
   font-size: 35px;
@@ -56,19 +56,19 @@ header>.nav-header>a {
   margin-left: 150px;
 }
 
-header>.img-contac>a>img {
+header > .img-contac > a > img {
   height: 60px;
   background-color: rgba(42, 134, 170, 0.308);
   border-radius: 10px;
   align-items: center;
 }
 
-header>.img-contac>a {
+header > .img-contac > a {
   text-decoration: none;
   color: white;
 }
 
-header>.img-contac>a>h1 {
+header > .img-contac > a > h1 {
   border: solid 1px rgb(230, 230, 230);
   padding: 30px;
   align-items: center;
@@ -80,7 +80,7 @@ header>.img-contac>a>h1 {
   color: white;
 }
 
-.logo>h2 {
+.logo > h2 {
   font-size: 70px;
   margin-right: 150px;
 }
@@ -93,7 +93,7 @@ header>.img-contac>a>h1 {
   align-items: start;
 }
 
-.info>h2,
+.info > h2,
 h1,
 p,
 a {
@@ -101,7 +101,7 @@ a {
   color: white;
 }
 
-.info>.more-me>a {
+.info > .more-me > a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -110,24 +110,26 @@ a {
   height: 40px;
 }
 
-.info>h2 {
+.info > h2 {
   border: white 1px solid;
   padding: 15px 8px;
   font-family: sans-serif;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 0.3393732492997199) 35%,
-      rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.3393732492997199) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
-.info>h1 {
+.info > h1 {
   font-size: 50px;
   font-family: sans-serif;
   margin: 0px;
 }
 
-.info>p {
+.info > p {
   font-size: 25px;
   width: 600px;
   text-align: justify;
@@ -192,7 +194,7 @@ ul.tabs li a {
 }
 
 .active {
-  background: #0984CC;
+  background: #0984cc;
 }
 
 ul.tabs li a .tab-text {
@@ -211,7 +213,6 @@ ul.tabs li a .tab-text {
 .secciones article p {
   text-align: justify;
 }
-
 
 @media screen and (max-width: 700px) {
   ul.tabs li {
@@ -235,7 +236,7 @@ ul.tabs li a .tab-text {
   }
 }
 
-.skill-info>h2 {
+.skill-info > h2 {
   color: white;
   text-align: center;
   margin-left: 90px;
@@ -245,24 +246,62 @@ ul.tabs li a .tab-text {
   padding: 15px 8px;
   font-family: sans-serif;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 0.3393732492997199) 35%,
-      rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.3393732492997199) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
-#tab1{
+#tab1 {
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(3, 1fr);
 }
-#tab1>.info-html{
+#tab1 > .info-html {
   width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#tab1>.info-html>img {
+#tab1 > .info-html > img {
   height: 70px;
   width: 70px;
+}
+#tab1 > .info-html > h2 {
+  margin: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+#tab1 > .info-html > p {
+  margin-top: 0px;
+}
+#tab2 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+#tab2 > .info-design > img {
+  height: 70px;
+  width: 70px;
+}
+#tab2 > .info-design {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#tab2 > .info-design > p {
+  margin-top: 0px;
+}
+#tab2 > .info-design > h2 {
+  margin: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 250px;
+  text-align: center;
+  color: white;
 }
