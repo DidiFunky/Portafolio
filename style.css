@@ -172,11 +172,11 @@ a {
 
 ul.tabs {
   width: 80%;
-  background: #363636;
+  background: none;
   list-style: none;
   display: flex;
   padding: 0;
-  margin-left: 190px;
+  margin-left: 323px;
 }
 
 ul.tabs li {
@@ -304,4 +304,8 @@ ul.tabs li a .tab-text {
   width: 250px;
   text-align: center;
   color: white;
+}
+.info-contacto{
+  background-color: #045483;
+  font-family: sans-serif;
 }
