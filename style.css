@@ -305,7 +305,81 @@ ul.tabs li a .tab-text {
   text-align: center;
   color: white;
 }
-.info-contacto{
+.info-contacto {
   background-color: #045483;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.cont-main {
+  padding: 60px;
+  background-color: rgb(141, 227, 248);
+  border-radius: 30px;
+  height: 70vh;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  color: #045483;
+  margin-top: 10vh;
+}
+.cont-main > .contactame > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-contacto > .cont-main > .cont-info > .cont-img > a > img {
+  height: 50px;
+}
+.cont-main > .contactame > form > .usuario > input {
+  color: #045483;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 450px;
+  height: 30px;
+  background-color: rgb(191, 252, 231);
+  font-size: 20px;
+  padding: 5px;
+}
+.cont-main > .contactame > form > .mail > input {
+  color: #045483;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 450px;
+  height: 30px;
+  background-color: rgb(191, 252, 231);
+  font-size: 20px;
+  padding: 5px;
+}
+.cont-main > .contactame > form > .mensajes > textarea {
+  color: #045483;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: rgb(191, 252, 231);
+  font-size: 20px;
+  width: 450px;
+  height: 150px;
+  padding: 5px;
+}
+.cont-main > .contactame > form > .usuario > input::placeholder {
+  font-size: 14px; 
+  color: #3e7494; 
+  padding: 5px;
+}
+.cont-main > .contactame > form > .mail > input::placeholder {
+  font-size: 14px; 
+  color: #3e7494;
+  padding: 5px; 
+}
+.cont-main > .contactame > form > .mensajes > textarea::placeholder {
+  font-size: 14px; 
+  color: #3e7494; 
+  padding: 5px;
 }
