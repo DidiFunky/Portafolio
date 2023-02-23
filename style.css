@@ -192,7 +192,7 @@ ul.tabs {
 }
 
 ul.tabs li {
-  width: 18%;
+  width: 20%;
 }
 
 ul.tabs li a {
@@ -206,11 +206,13 @@ ul.tabs li a {
 }
 
 .active {
-  background: #0984cc;
+  background: rgb(16, 161, 197);
 }
 
 ul.tabs li a .tab-text {
   margin-left: 8px;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .secciones {
